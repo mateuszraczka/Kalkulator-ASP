@@ -1,0 +1,14 @@
+﻿@model Kalkulator.Models.Calc;
+
+@{
+    ViewData["Title"] = "CalcPage";
+}
+
+<form action="KalkulatorResult">
+    Liczba1<input type="number" asp-for="Liczba1" />
+    Znak<input type="text" asp-for="Znak"/>
+    Liczba2<input type="number" asp-for="Liczba2" />
+    <input type="submit"/>
+</form>
+
+<p>@ViewBag.wynik</p>
